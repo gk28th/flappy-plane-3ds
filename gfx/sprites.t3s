@@ -1,0 +1,4 @@
+--atlas -f rgba -z auto
+plane.png
+tower.png
+background.png
