@@ -1,7 +1,8 @@
-#include <citro2d.h>
-
+#pragma once
 #ifndef PLANE_H
 #define PLANE_H
+
+#include <citro2d.h>
 
 class Plane
 {

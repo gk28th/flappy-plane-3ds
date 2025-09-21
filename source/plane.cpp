@@ -1,4 +1,5 @@
 #include "plane.h"
+#include <citro2d.h>
 
 Plane::Plane(C2D_Sprite* sprite) // defualt values
 	: m_sprite {sprite}

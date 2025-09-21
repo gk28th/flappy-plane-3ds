@@ -1,7 +1,8 @@
-#include <citro2d.h>
-
+#pragma once
 #ifndef SPRITES_H
 #define SPRITES_H
+
+#include <citro2d.h>
 
 namespace sprites
 {
@@ -13,7 +14,7 @@ namespace sprites
     extern constexpr int towerHeight{240};
     extern constexpr int planeWidth{47};
     extern constexpr int planeHeight{240};
-
+    
     void initSpriteSheet();
     void initSprites();
     void drawSprites();

@@ -1,4 +1,5 @@
 #include <citro2d.h>
+#include <iostream>
 #include "sprites.h"
 #include "plane.h"
 #include "tower.h"
@@ -8,6 +9,7 @@ int main()
 {
 	romfsInit();
 	gfxInitDefault();
+	consoleInit(GFX_BOTTOM, NULL);
 	C3D_Init(C3D_DEFAULT_CMDBUF_SIZE);
 	C2D_Init(C2D_DEFAULT_MAX_OBJECTS);
 	C2D_Prepare();
@@ -23,8 +25,9 @@ int main()
 			
 	while (aptMainLoop())
 	{
+		if(planeTowerCollision()) std::cout << "Crashed\n";
+
 		plane.planeJump();
-		
 		for(int i = 0; i < 3; i++) 
 		{
 			towers[i].generateTower();

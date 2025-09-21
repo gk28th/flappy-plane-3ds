@@ -1,7 +1,8 @@
-#include <citro2d.h>
-
+#pragma once
 #ifndef TOWER_H
 #define TOWER_H
+
+#include <citro2d.h>
 
 class Tower
 {

@@ -1,5 +1,5 @@
-#include "tower.h"
 #include <cstdlib>
+#include "tower.h"
 
 constexpr int screenWidth{400};
 constexpr int screenHeight{240};

@@ -1,14 +1,11 @@
 #include <citro2d.h>
 
-
-
 namespace sprites{
     
     C2D_SpriteSheet spriteSheet;
     C2D_Sprite planeSprite; 
     C2D_Sprite towerSprite[6];
     C2D_Sprite bgSprite[2];
-
     constexpr int towerWidth{47};
     constexpr int towerHeight{240};
     constexpr int planeWidth{47};
