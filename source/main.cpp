@@ -1,5 +1,5 @@
 #include <citro2d.h>
-#include <iostream>
+//#include <iostream>
 #include "sprites.h"
 #include "plane.h"
 #include "tower.h"
@@ -25,7 +25,7 @@ int main()
 			
 	while (aptMainLoop())
 	{
-		if(planeTowerCollision()) std::cout << "Crashed\n";
+		//if(planeTowerCollision()) std::cout << "Crashed\n";
 
 		plane.planeJump();
 		for(int i = 0; i < 3; i++) 

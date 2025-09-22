@@ -10,10 +10,10 @@ namespace sprites
     extern C2D_Sprite planeSprite;
     extern C2D_Sprite towerSprite[5];
     extern C2D_Sprite bgSprite[2];
-    extern constexpr int towerWidth{47};
-    extern constexpr int towerHeight{240};
-    extern constexpr int planeWidth{47};
-    extern constexpr int planeHeight{240};
+    extern const int towerWidth;
+    extern const int towerHeight;
+    extern const int planeWidth;
+    extern const int planeHeight;
     
     void initSpriteSheet();
     void initSprites();
