@@ -6,10 +6,10 @@ namespace sprites{
     C2D_Sprite planeSprite; 
     C2D_Sprite towerSprite[6];
     C2D_Sprite bgSprite[2];
-    const int towerWidth{47};
-    const int towerHeight{240};
-    const int planeWidth{47};
-    const int planeHeight{240};
+    extern const int towerWidth{47};
+    extern const int towerHeight{240};
+    extern const int planeWidth{47};
+    extern const int planeHeight{240};
 
     void initSpriteSheet()
     {   

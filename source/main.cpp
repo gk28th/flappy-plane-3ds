@@ -1,5 +1,5 @@
 #include <citro2d.h>
-//#include <iostream>
+#include <iostream>
 #include "sprites.h"
 #include "plane.h"
 #include "tower.h"
@@ -19,13 +19,13 @@ int main()
 	sprites::initSprites();
 	
 	Plane plane {&sprites::planeSprite};
-	Tower towers[3] {{&sprites::towerSprite[0], &sprites::towerSprite[1], 0}, {&sprites::towerSprite[2], &sprites::towerSprite[3], sprites::towerWidth+133}, {&sprites::towerSprite[4], &sprites::towerSprite[5], sprites::towerWidth+133+sprites::towerWidth+133}};
+	Tower towers[3] {{&sprites::towerSprite[0], &sprites::towerSprite[1], 0}, {&sprites::towerSprite[2], &sprites::towerSprite[3], sprites::towerWidth + 133}, {&sprites::towerSprite[4], &sprites::towerSprite[5], sprites::towerWidth*2 + 133*2}};
 	for(int i = 0; i < 3; i++) towers[i].generateTower();
 
 			
 	while (aptMainLoop())
 	{
-		//if(planeTowerCollision()) std::cout << "Crashed\n";
+		if(planeTowerCollision()) std::cout << "Crashed " << sprites::planeSprite.params.pos.x << ", " <<sprites::planeSprite.params.pos.y << "    " << sprites::towerSprite[1].params.pos.x << ", " <<sprites::towerSprite[1].params.pos.y << "\n";
 
 		plane.planeJump();
 		for(int i = 0; i < 3; i++) 
